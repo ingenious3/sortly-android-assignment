@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_64dp"
+        android:textSize="@dimen/_24sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/tvItemType"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemName"
+        tools:text="Item/Folder" />
+
+    <TextView
+        android:id="@+id/tvSid"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemType"
+        tools:text="sid"/>
+
+    <TextView
+        android:id="@+id/tvItemQuantity"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvSid"
+        tools:text="Quantity"/>
+
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemQuantity"
+        tools:text="Price"/>
+
+    <TextView
+        android:id="@+id/tvNotes"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemPrice"
+        tools:text="Notes"/>
+
+    <TextView
+        android:id="@+id/tvCreatedDate"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvNotes"
+        tools:text="Created At"/>
+
+    <TextView
+        android:id="@+id/tvTags"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvCreatedDate"
+        tools:text="Tags"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sortly-android-assignment</string>
+    <string name="something_went_wrong">Something went wrong!!</string>
+    <string name="quntity">Quntity : </string>
+    <string name="total_price">Total Price : </string>
+    <string name="type">Type : </string>
+    <string name="sid">SID : </string>
+    <string name="notes">Notes : </string>
+    <string name="date">Date : </string>
+    <string name="tags">Tags : </string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_items"
+    app:startDestination="@id/itemsList">
+
+    <fragment
+        android:id="@+id/itemsList"
+        android:name="com.example.sortly.ui.fragments.ItemsListFragment"
+        android:label="Items List"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_itemList_to_itemDetails"
+            app:destination="@id/itemDetails" />
+
+        <argument
+            android:name="item"
+            app:argType="com.example.sortly.data.model.Items" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemDetails"
+        android:name="com.example.sortly.ui.fragments.ItemDetailsFragment"
+        android:label="Item Details"
+        tools:layout="@layout/fragment_details">
+
+    </fragment>
+
+</navigation>
